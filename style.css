@@ -1,0 +1,135 @@
+/* Reset default margin, padding to ensure complete control over the layout across different web browsers*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+body {
+    background-color: #ebebeb;
+    /* background-color: white; */
+    color: rgb(18, 18, 18);
+    /* color: black; */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    background-color: #f4f4f4;
+    text-align: center;
+    height: 80px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin: 10px;
+}
+
+.links a {
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.links a:hover {
+    color: #fe9312;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+/* Centered search container with responsive width */
+.search-container {
+    max-width: 600px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+/* Search input styling */
+.search-container input {
+    width: 100%;
+    padding: 16px;
+    font-size: 17.6px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    border: 1px solid #333;
+}
+
+/* Focus effect for input */
+.search-container input:focus {
+    outline: 2px solid #666;
+}
+
+/* Grid layout for movie cards */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 32px;
+    padding: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual movie card styling */
+.movie-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+/* Hover effect for movie cards */
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Movie card image styling */
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Movie title and description container */
+.movie-info {
+    padding: 16px;
+}
+
+/* Movie title styling */
+.movie-info h3 {
+    margin-bottom: 8px;
+    font-size: 17.6px;
+}
+
+/* Movie description styling */
+.movie-info p {
+    color: #aaa;
+    font-size: 14.4px;
+}
+
+/* Loading message styling */
+.loading {
+    text-align: center;
+    padding: 32px;
+    font-size: 19.2px;
+    color: #666;
+}
+
+/* Error message styling */
+.error {
+    text-align: center;
+    padding: 32px;
+    color: #ff6b6b;
+}
