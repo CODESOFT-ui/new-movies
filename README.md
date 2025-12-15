@@ -26,16 +26,18 @@ It allows users to search for movies in real time using the **OMDb API** and dis
 ---
 
 ## 📂 Project Structure
+Project Structure
+
 new-movies/
-│
-├── index.html
-├── style.css
-├── script.js
-├── images/
-│   ├── logo.png
-│   ├── favicon.png
-│   └── no-image-available.png
-└── README.md
+- index.html
+- style.css
+- script.js
+- images/
+  - logo.png
+  - favicon.png
+  - no-image-available.png
+- README.md
+
 
 
 
